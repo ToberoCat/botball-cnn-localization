@@ -1,0 +1,22 @@
+paths:
+  csv_path: "data/cleaned_metadata.csv"
+  checkpoint_folder: "data/ckpt/large_v5.1"
+  log_dir: "data/logs/large_v5.1"
+  background_img_path: "assets/gametable.png"
+
+training:
+  batch_size: 64
+  test_size: 0.2
+  max_epochs: 2500
+  initial_lr: 0.001
+  lr_scheduler: "reduce_lr_on_plateau" # One of ["reduce_lr_on_plateau", "cosine_decay_restarts", "None"]
+  resume_training: true
+
+tuner:
+  use_tuner: false
+  tuner_max_epochs: 50
+  factor: 3
+  project_name: "tiny_cnn"
+  directory: "my_tuner_dir_small"
+  objective: "val_loss"
+  patience: 5
