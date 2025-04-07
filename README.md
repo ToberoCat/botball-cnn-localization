@@ -12,5 +12,4 @@ this repository. The code is meant to be a starting point for your own experimen
 
 ## Paper
 
-The paper can be found
-here: [AXHT 3085 - Real-Time Robot Localization on the Botball Table Using a USB Camera and CNNs.pdf]()
+The paper can be found in this repository.
